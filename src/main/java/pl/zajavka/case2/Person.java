@@ -1,16 +1,20 @@
 package pl.zajavka.case2;
 
-record Person(String name, String surname) {
+record Person(String name, Long age) {
 
     public String whatIsYourJob() {
         return "Software developer!";
     }
 
-    public Boolean doYouLikePizza() {
-        return true;
+    public String whatDoYouLike() {
+        return "Strawberries";
     }
 
     public Boolean doYouHaveABike() {
+        return true;
+    }
+
+    public Boolean doYouLikePizza() {
         return true;
     }
 }
